@@ -94,6 +94,7 @@ func (pm *PortalMetadata) SetIsForumGeneral(isForumGeneral bool) (changed bool) 
 type MessageMetadata struct {
 	ContentHash []byte              `json:"content_hash,omitempty"`
 	ContentURI  id.ContentURIString `json:"content_uri,omitempty"`
+	BotButtons  BotButtons          `json:"bot_buttons,omitempty"`
 }
 
 type UserLoginMetadata struct {
